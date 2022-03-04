@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "outDir": "build/dist",
+        "sourceMap": true,
+        "allowJs": true,
+        "jsx": "react",
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "esModuleInterop": true,
+        "target": "es5",
+        "lib": ["es6", "dom"],
+        "types": ["reflect-metadata", "jest"],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "baseUrl": ".",
+        "paths": {
+            "@public/*": ["./public/*"],
+            "@components/*": ["./src/components/*"],
+            "@assets/*": ["./src/assets/*"],
+            "@configs/*": ["./configs/*"],
+            "@utils/*": ["./src/utils/*"],
+            "@redux/*": ["./src/store/redux/*"]
+        }
+    },
+    "exclude": [
+        "node_modules",
+        "build",
+        "scripts",
+        "acceptance-tests",
+        "webpack",
+        "jest",
+        "src/setupTests.ts",
+        "**/*.test.ts"
+    ],
+    "types": ["typePatches"]
+}
